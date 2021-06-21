@@ -19,7 +19,7 @@
 
 % Define itemize bullet and objectives environment
 \renewcommand{\labelitemi}{$\blacksquare$}
-\newenvironment{Objectives}
+\newenvironment{myObjectives}
 	{\begin{quote}
 			\hrule
 			\begin{center}
@@ -32,18 +32,30 @@
 			\hrule
 	\end{quote}
 	}
+
 %----------------------------------------------------------------------------------------
 	
-\begin{Objectives}
+\begin{myObjectives}
 	\item Establish what the software should be. Possibly what it will be in the future
 	\item test
-\end{Objectives}
+\end{myObjectives}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
 \section{Vision}
+
+\begin{center}
+	\begin{tabularx}{\textwidth}{|c|c|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+		\multicolumn{4}{c}{\tabhead{Revision History}} \\
+		\hline
+		\tabhead{Date} &\tabhead{Version} &\tabhead{Description} &\tabhead{Author} \\
+		\hline
+		June 20, 2021 &Draft &Initial vision for the project. &\authorname \\
+		\hline
+	\end{tabularx}
+\end{center} % Revision History Format
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -52,20 +64,51 @@
 
 The purpose of this document is to collect, analyze, and define high-level needs and features of the \emph{\ttitle}. It focuses on the capabilities needed by the stakeholders, and the target users, and why these needs exist. The details of how the \emph{\ttitle} fulfills these needs are detailed in the use-case and supplementary specifications.
 
-\subsubsection{Scope}
-
 \subsubsection{Reference}
+
+See \artif{Glossary} % Replace with reference to glossary after glossary is made.
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \subsection{Positioning}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
 
 \subsubsection{Problem Statement}
 
+\begin{center}
+	\begin{tabularx}{\textwidth}{|>{\hsize=.33\textwidth\raggedright\arraybackslash}X|>{\raggedleft\arraybackslash}X|}
+		\hline
+		\tabhead{problem of} &The lack of modernization in assessment\\
+		\hline
+		\tabhead{affects} &Test makers and test takers \\
+		\hline
+		\tabhead{the impact of which is} &That there is too much manual labor that can otherwise be automated through software. \\
+		\hline
+		\tabhead{a successful solution would be} &Create a software that can automate assessment, reducing time spent and improving the integrity of the results. \\
+		\hline
+	\end{tabularx}
+\end{center}
+
 \subsubsection{Product Position Statement}
+
+\begin{center}
+	\begin{tabularx}{\textwidth}{|>{\hsize=.33\textwidth\raggedright\arraybackslash}X|>{\raggedleft\arraybackslash}X|}
+		\hline
+		\tabhead{For} &Individuals or small to medium size organizations. \\
+		\hline
+		\tabhead{Who} &Wish to automate assessment procedures. \\
+		\hline
+		\tabhead{\ttitle} &Is an \emph{open-source} software product. \\
+		\hline
+		\tabhead{That} &That can automate assessment such as testing and evaluating. \\
+		\hline
+		\tabhead{Unlike} &Expensive web-base XaaS solutions which are complicated to use. Or general document editing programs which lacks essential features. \\
+		\hline
+		\tabhead{Our Product} &Is simple. Doesn't require programming skills to use or extensive hardware resources. Can be used \emph{off-line}. And intended for personal and small scales use. \\
+		\hline
+	\end{tabularx}
+\end{center}
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -75,16 +118,83 @@ Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar p
 
 \subsubsection{Stake Holder Summary}
 
+\begin{center}
+	\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+		\hline
+		\tabhead{Name} &\tabhead{Represents} &\tabhead{Role} \\
+		\hline
+		Developer &As of now represents the entirety of the project &Main source of funds and does everything in the project, from requirement, analysis and design, implementation, testing, deployment to project management\\
+		\hline
+		End-user &Represents individuals who wants to use the software, mainly me &Uses the software \\
+		\hline
+	\end{tabularx}
+\end{center}
+
+\subsubsection{User Summary}
+
+\begin{center}
+	\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+		\hline
+		\tabhead{Name} &\tabhead{Description} &\tabhead{Stakeholders} \\
+		\hline
+		Test makers &Creates question banks and generates test Administers test. &Self-represented \\
+		\hline
+		Test takers &Takes the test &Self-represented \\
+		\hline
+		Evaluators &Evaluates the results and draws conclusions. &Self-represented \\
+		\hline
+	\end{tabularx}
+\end{center}
+
 \subsubsection{User Environment}
+
+Assessment is a lengthy process and tedious at times. Often the purpose of assessment is missed altogether and \emph{passing the test} becomes the priority. This leads to assessment being reduced to a compulsory \emph{formality} instead of a tool for learning.
+
+Users are expected to have at least a relatively \emph{low-end PC} in order to use the software. Internet connection is not required in the operations but might be needed in updating the software.
 
 \subsubsection{Key Stakeholder or User Needs}
 
-\
+The \emph{needs} provided in these section is generated by myself as I am the first \emph{end-user} of the software. As it moves further in development I might elicit new needs from future stake-holders and end-users.
+
+\begin{center}
+	\begin{tabular}{|>{\bfseries\centering\arraybackslash}m{.18\textwidth}|>{\centering\arraybackslash}m{.1\textwidth}|>{\bfseries\centering\arraybackslash}m{.14\textwidth}|>{\centering\arraybackslash}m{.22\textwidth}|>{\centering\arraybackslash}m{.22\textwidth}|}
+		\hline
+		\tabhead{Need} &\tabhead{Priority} &\tabhead{Concerns} &\tabhead{Current Solution} &\tabhead{Proposed Solution}\\
+		\hline
+		Automatic test generation &High &Manual test creation is tedious and time consuming &No current solution &Employ the use a question bank and automatically generate a test questionnaire\\
+		\hline
+		Automatic test checking &High &Software should be able check test answers &No current solution &Answers are of course included with test item so checking the answer can be automated\\
+		\hline
+		Digitized test results &Low &Manual recording is time consuming and laborious &No current solution &Test results are converted to a spread sheet readable format like \brand{.csv} or can be pipe-lined to a \brand{DBMS}.
+		alternatively an evaluation module can made for the software \\
+		\hline
+		Able to run on a low-end PC &Medium &I have a \emph{potato} laptop &No current solution &Develop for low-end PC \\
+		\hline
+		Usability Requirements &Low &--- &No current solution &Will be addressed in the \emph{UI Mock-ups} \\
+		\hline
+		Technical support needs &Low &--- &No current solution &Will be addressed during deployment stage \\
+		\hline 
+	\end{tabular}
+\end{center}
+
+\subsubsection{Alternatives and Competition}
+
+The only true open-source program that can be considered a competition for this project is a \emph{computer-based testing} software called \brand{TCExam}. TCExam is a platform type software that must be run using a web-server. I wouldn't deny the fact that TCExam outclasses this project but in my opinion it fulfills a different niche than what \ttitle~ is trying to fill.
+
+For alternatives, there are open-source documents editors such as \brand{Libre Office: Writer}, \brand{Google Docs and Google Forms}, etc $\ldots$. These software are intended for general use and lack the main features that address the needs of the end users.
 %-----------------------------------
 %	SUBSECTION 4
 %-----------------------------------
 
 \subsection{Product Overview}
+
+\subsubsection{Product Perspective}
+
+\ttitle~ is planned to be a standalone software although it would use \stndrd{Qt5 GUI API} for its \emph{UI} it's back end architecture would be designed from scratch.
+
+\subsubsection{Assumption and Dependencies}
+
+No dependencies to other systems as of this version.
 
 %-----------------------------------
 %	SUBSECTION 5
@@ -92,11 +202,16 @@ Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar p
 
 \subsection{Product Features}
 
+Will be provided at Chapter \ref{ElaborationPt.1}
+
 %-----------------------------------
 %	SUBSECTION 6
 %-----------------------------------
 
 \subsection{Other Product Requirements}
+
+None for this version
+
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------

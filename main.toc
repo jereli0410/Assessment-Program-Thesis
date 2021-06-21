@@ -25,62 +25,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.1}Introduction}{1}{subsection.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.1.1}Scope}{1}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}Reference}{1}{subsubsection.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.1.2}Reference}{1}{subsubsection.19}%
+\contentsline {subsection}{\numberline {1.1.2}Positioning}{1}{subsection.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Positioning}{1}{subsection.20}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Problem Statement}{1}{subsubsection.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.1}Problem Statement}{1}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Product Position Statement}{2}{subsubsection.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.2}Product Position Statement}{1}{subsubsection.22}%
+\contentsline {subsection}{\numberline {1.1.3}Stakeholders and User Descriptions}{2}{subsection.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Stakeholders and User Descriptions}{1}{subsection.23}%
+\contentsline {subsubsection}{\numberline {1.1.3.1}Stake Holder Summary}{2}{subsubsection.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3.1}Stake Holder Summary}{1}{subsubsection.24}%
+\contentsline {subsubsection}{\numberline {1.1.3.2}User Summary}{2}{subsubsection.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3.2}User Environment}{1}{subsubsection.25}%
+\contentsline {subsubsection}{\numberline {1.1.3.3}User Environment}{2}{subsubsection.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3.3}Key Stakeholder or User Needs}{1}{subsubsection.26}%
+\contentsline {subsubsection}{\numberline {1.1.3.4}Key Stakeholder or User Needs}{3}{subsubsection.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}Product Overview}{2}{subsection.27}%
+\contentsline {subsubsection}{\numberline {1.1.3.5}Alternatives and Competition}{3}{subsubsection.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Product Features}{2}{subsection.28}%
+\contentsline {subsection}{\numberline {1.1.4}Product Overview}{4}{subsection.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}Other Product Requirements}{2}{subsection.29}%
+\contentsline {subsubsection}{\numberline {1.1.4.1}Product Perspective}{4}{subsubsection.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Business Case}{2}{section.30}%
+\contentsline {subsubsection}{\numberline {1.1.4.2}Assumption and Dependencies}{4}{subsubsection.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Rationale for Leaving Out Business Case}{2}{subsection.31}%
+\contentsline {subsection}{\numberline {1.1.5}Product Features}{4}{subsection.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Supplementary Requirements}{2}{section.35}%
+\contentsline {subsection}{\numberline {1.1.6}Other Product Requirements}{4}{subsection.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Use-case Model}{2}{section.36}%
+\contentsline {section}{\numberline {1.2}Business Case}{4}{section.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Iteration Plan}{2}{section.37}%
+\contentsline {subsection}{\numberline {1.2.1}Rationale for Leaving Out Business Case}{4}{subsection.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Elaboration Pt. 1}{3}{chapter.38}%
+\contentsline {section}{\numberline {1.3}Supplementary Requirements}{4}{section.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Main Section 1}{3}{section.39}%
+\contentsline {section}{\numberline {1.4}Use-case Model}{5}{section.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Subsection 1}{3}{subsection.40}%
+\contentsline {section}{\numberline {1.5}Iteration Plan}{5}{section.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Subsection 2}{3}{subsection.41}%
+\contentsline {chapter}{\numberline {2}Elaboration Pt. 1}{7}{chapter.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Main Section 2}{3}{section.42}%
+\contentsline {section}{\numberline {2.1}Main Section 1}{7}{section.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Elaboration Pt.2 and Construction}{5}{chapter.43}%
+\contentsline {subsection}{\numberline {2.1.1}Subsection 1}{7}{subsection.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Main Section 1}{5}{section.44}%
+\contentsline {subsection}{\numberline {2.1.2}Subsection 2}{7}{subsection.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Subsection 1}{5}{subsection.45}%
+\contentsline {section}{\numberline {2.2}Main Section 2}{7}{section.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Subsection 2}{5}{subsection.46}%
+\contentsline {chapter}{\numberline {3}Elaboration Pt.2 and Construction}{9}{chapter.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Main Section 2}{5}{section.47}%
+\contentsline {section}{\numberline {3.1}Main Section 1}{9}{section.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{7}{appendix.48}%
+\contentsline {subsection}{\numberline {3.1.1}Subsection 1}{9}{subsection.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{7}{section.49}%
+\contentsline {subsection}{\numberline {3.1.2}Subsection 2}{9}{subsection.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{9}{appendix*.50}%
+\contentsline {section}{\numberline {3.2}Main Section 2}{9}{section.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{11}{appendix.51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{11}{section.52}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{13}{appendix*.53}%
