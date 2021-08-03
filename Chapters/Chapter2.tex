@@ -17,28 +17,186 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Domain Class Model}
+\section{Use Cases Refined}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+In order work \emph{Iteration 1: Elaboration Phase} the requirements should be first refined and this can be achieved by fully dressing \emph{UC1 and UC2}, the main use-cases that will be the subject of the Design Model and Implementation.
 
+Keep in mind that these refined use cases are not separate from the use case model artifact. In fact they are updates to the prior presented use case model and is reflected in the doc folder of the repository. It's isolation from the model only serves to improve the narrative of the project.
+
+Refer to figure \ref{UC1} for UC1 and figure 
+
+\begin{figure}[h]
+	\begin{center}
+		\begin{flushleft}
+			\Large{\textbf{UC1: Create Test}}
+		\end{flushleft}
+		\begin{tabularx}{\textwidth}{|>{\hspace{1em}\raggedright\arraybackslash}X}
+			\hline
+			\\
+			\textbf{Scope:} \ttitle \\
+			\textbf{Level:} User Goal \\
+			\textbf{Primary Actor:} End-User \\
+			\textbf{Stake Holders and Interest:} \\
+			--User: Wants less manual labor. Wants organized and custom layout. Wants intelligent options in multiple-choice types. Wants no redundancy in stems.
+			\\
+			--Developer: Wants to mitigate complexity in design. \\
+			\textbf{Preconditions:} User has already ``logged in''. Question bank is available.\\
+			\textbf{Success Guarantee (or Postconditions):} Test generated without error. Generated test saved. Generated test can be loaded.\\
+			\\
+			\textbf{Main Success Scenario (or Basic Flow)} \\
+			1. User enters a title for the test. \\
+			2. User chooses a question bank file to generate from. \\
+			3. User enters number of sections for the test. \\
+			4. User configures number of stem for the first section.\\
+			5. User configures type of stem for the first section. \\
+			6. Repeat step 4--5 until all sections are configured. \\
+			7. User starts automatic generation. \\
+			8. No errors detected. Test generated is viewed. \\
+			9. Generated test is saved. \\
+			\\
+		\end{tabularx}
+	\end{center}
+	\caption{Fully dressing UC1 to serve as reference for the domain model and design model.}
+	\label{UC1}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\begin{tabularx}{\textwidth}{|>{\hspace{1em}\raggedright\arraybackslash}X}
+			\hline
+			\\
+			\textbf{Extensions (or Alternative Flow)} \\
+			a*. At anytime the system fails. \\
+			\qquad To support recovery, ensure that question bank is safe from corruption. \\
+			\qquad \qquad 1.  Error report is logged. \\
+			\qquad \qquad 2. User restarts the system. \\
+			\qquad \qquad 3. User is informed of the system failure with the error message. \\
+			2a. No question bank available. User enters subfunction-level \emph{Create Question Bank} use case. \\
+			2b. Question bank has insufficient stem to populate section. System throws exception ``not enough stem to populate.'' \\
+			4a. User wants to customize subsection. Aside from the number of items and type of question the user can also chose the topic via ``tags'' and the level. \\
+			8a. Errors is detected. \\
+			\qquad 1. Not enough question to fill the section. System suggest adding more stems or using multiple question banks.\\
+			\qquad 2. Not enough option to fill stem options. System suggest use of ``dictionary''.\\
+			\\
+			\textbf{Special Requirements:} \\
+			None for this version. \\
+			\\
+			\textbf{Technology and Data Variation List:} \\
+			None of this version. \\
+			\\
+			\textbf{Frequency of Occurrence} \\
+			Often. Considered main goal of actor. \\
+			\\
+			\textbf{Open Issues:} \\
+			-- Will be addressed during initial construction. \\
+			\\
+		\end{tabularx}
+	\end{center}
+	\caption{Fully dressing UC1 to serve as reference for the domain model and design model.}
+	\label{UC1.5}
+\end{figure}
+
+\bigskip % Use Case Format
+
+\begin{figure}[h]
+	\begin{subfigure}{\textwidth}
+		\begin{center}
+			\begin{flushleft}
+				\Large{\textbf{UC2: Take Test}}
+			\end{flushleft}
+			\begin{tabularx}{\textwidth}{|>{\hspace{1em}\raggedright\arraybackslash}X}
+				\hline
+				\\
+				\textbf{Scope:} \ttitle \\
+				\textbf{Level:} User Goal \\
+				\textbf{Primary Actor:} End-User \\
+				\textbf{Stake Holders and Interest:} \\
+				--User: Wants two types of test mode. \emph{Mode 1:} One question then followed by showing the answer. \emph{Mode 2:} Answer all question then show all answers or no answers shown. Wants good UI (will address needs during UI design.)
+				\\
+				\textbf{Preconditions:} User has already ``logged in''. Generated test is available.\\
+				\textbf{Success Guarantee (or Postconditions):} All stem response is saved. Results of test saved.\\
+				\\
+			\end{tabularx}
+		\end{center}
+	\caption{Fully dressing UC2.}
+	\label{UC2.1}
+	\end{subfigure}
+\begin{subfigure}{\textwidth}
+	\begin{center}
+	\begin{tabularx}{\textwidth}{|>{\hspace{1em}\raggedright\arraybackslash}X}
+			\textbf{Main Success Scenario (or Basic Flow)} \\
+			1. User loads generated test. \\
+			2. User chose mode 1. \\
+			3. System starts with first section and views the first stem. \\
+			4. User enters response for stem. System saves response.\\
+			5. System shows answer. Systems compares answer and response. If match then system informs user that response is correct. Else system informs user that response is wrong. \\
+			6. System goes to next stem. Repeat step 4 -- 5. \\
+			7. Repeat step 6 until all stems for all sections have been responded. \\
+			8. System computes results. \\
+			9. System saves results. \\
+			\\
+			\textbf{Extensions (or Alternative Flow)} \\
+			a*. At anytime the system fails. \\
+			\qquad To support recovery, ensure that test results are safe from corruption. \\
+			\qquad \qquad 1.  Error report is logged. \\
+			\qquad \qquad 2. User restarts the system. \\
+			\qquad \qquad 3. User is informed of the system failure with the error message. \\
+			1a. No question bank available. User enters use case \emph{Create Test}. \\
+			2a. User chooses mode 2. \\
+			\qquad 1. System displays all stems in first section. \\
+			\qquad 2. User enters response for all stems in section. \\
+			\qquad 3. System views next section and all its stem. \\
+			\qquad 4. Repeat step 2--3 until all section is answered. \\
+			\qquad 5. If view answers is available user may view answers. Else continue. \\
+			\qquad 6. Go to step 8--9 of \emph{Main Success Scenario} \\
+			4a. User does not know answer. \\
+			\qquad 1. User may skip the stem.
+			\qquad 2. Before moving to next section system informs user to review unanswered stem. \\
+			\qquad 3. If user chooses to review stem the system re-displays stems without response. Else go to step 6 of main scenario. \\
+			
+			\\
+			\textbf{Special Requirements:} \\
+			None for this version. \\
+			\\
+			\textbf{Technology and Data Variation List:} \\
+			None of this version. \\
+			\\
+			\textbf{Frequency of Occurrence} \\
+			Often. Considered secondary goal of actor. \\
+			\\
+			\textbf{Open Issues:} \\
+			-- UI implementation. \\
+			\\
+		\end{tabularx}
+	\end{center}
+	\caption{Fully dressing UC2.}
+	\label{UC2.2}
+\end{subfigure}
+	\caption{Fully dressing UC2.}
+\end{figure}
+
+\bigskip % Use Case Format
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
-\subsection{Subsection 1}
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
+%\subsection{UC1: Create Test}
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
-\subsection{Subsection 2}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+%\subsection{UC2: Take Test}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 2}
+\section{Domain Model}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+Domain model package contains the Domain Class Model and its Domain Class Diagram. the main purpose of this model to serve as reference for the design class model which in turn will be map to the source code of the system.
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+%\section{Sequence Model}

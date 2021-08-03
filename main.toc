@@ -95,26 +95,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Elaboration Pt. 1}{11}{chapter.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Main Section 1}{11}{section.56}%
+\contentsline {section}{\numberline {2.1}Use Cases Refined}{11}{section.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Subsection 1}{11}{subsection.57}%
+\contentsline {section}{\numberline {2.2}Domain Model}{11}{section.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Subsection 2}{11}{subsection.58}%
+\contentsline {chapter}{\numberline {3}Elaboration Pt.2 and Construction}{15}{chapter.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Main Section 2}{11}{section.59}%
+\contentsline {section}{\numberline {3.1}Main Section 1}{15}{section.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Elaboration Pt.2 and Construction}{13}{chapter.60}%
+\contentsline {subsection}{\numberline {3.1.1}Subsection 1}{15}{subsection.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Main Section 1}{13}{section.61}%
+\contentsline {subsection}{\numberline {3.1.2}Subsection 2}{15}{subsection.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Subsection 1}{13}{subsection.62}%
+\contentsline {section}{\numberline {3.2}Main Section 2}{15}{section.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Subsection 2}{13}{subsection.63}%
+\contentsline {chapter}{\numberline {A}Getting Started}{17}{appendix.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Main Section 2}{13}{section.64}%
+\contentsline {chapter}{\numberline {B}Glossary}{19}{appendix.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{15}{appendix.65}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{15}{section.66}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{17}{appendix*.67}%
+\contentsline {chapter}{Bibliography}{21}{appendix*.68}%
