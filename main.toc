@@ -101,7 +101,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Elaboration Pt.2 and Construction}{15}{chapter.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Main Section 1}{15}{section.62}%
+\contentsline {section}{\numberline {3.1}System Sequence Diagram}{15}{section.62}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Subsection 1}{15}{subsection.63}%
 \defcounter {refsection}{0}\relax 
